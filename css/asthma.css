@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {background: #00F0FF;}
+::-moz-selection {background: #00F0FF;}
+::-webkit-selection {background: #00F0FF;}
+
+body{
+  background-image: url(asthma.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  min-height: 100%;
+}
+
+h1{
+  font-family: Ubuntu-B;
+  font-size: 57.33px;
+  margin-top: 56px;
+  margin-bottom: 0px;
+  color: #fff;
+  text-shadow: 3px 3px 0px #EC5500;
+  transition: 2.5s;
+}
+
+h1:hover{
+  transition: 2.5s;
+  -webkit-transform: translate(-400px, 0px);
+  text-shadow: 6px 6px 0px #EC5500;
+}
+
+h3{
+  font-family: Ubuntu-R;
+  font-size: 23.04px;
+  text-align: left;
+  font-weight: bold;
+  text-indent: 25px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin: 16px 16px 16px;
+}
+
+h4{
+  font-family: Ubuntu-M;
+  font-size: 19.20px;
+  text-align: left;
+  font-weight: bold;
+  text-indent: 25px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+p{
+  font-family: Ubuntu-R;
+  font-size: 16.00px;
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  text-indent: 5px;
+}
+
+p1 img{
+  margin-bottom: 8px;
+  margin-top: 16px;
+  width: 45%;
+  border: solid 10px #fff;
+  border-radius: 25px;
+  opacity: 50%;
+  transition: 1.5s;
+}
+
+p2 img{
+  margin-bottom: 8px;
+  margin-top: 8px;
+  width: 42.25%;
+  border: solid 10px #fff;
+  border-radius: 25px;
+  opacity: 50%;
+  transition: 1.5s;
+}
+p3 img{
+  margin-bottom: 8px;
+  margin-top: 8px;
+  width: 46.5%;
+  border: solid 10px #fff;
+  border-radius: 25px;
+  opacity: 50%;
+  transition: 1.5s;
+}
+
+
+img:hover{
+  border: solid 10px #FFDAAF;
+  border-radius: 25px;
+  opacity: 100%;
+  transition: 1.5s;
+}
+
+      /**TABS**/
+
+.tabs input[type=radio] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+ 
+.tabs {
+    width: 100%;
+    float: none;
+    list-style: none;
+    position: relative;
+    margin-top: 56px;
+}
+ 
+.tabs li {
+    float: left;
+
+}
+ 
+.tabs label {
+    margin-right: 0.2em ;
+    background: #FFDAAF;
+    color: #EC5500;    
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px;
+    border: solid 3px #EC5500;    
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 2s ease-in-out;
+    text-shadow: 2px 2px 0px #fff;
+}
+
+.tabs label:hover {
+    background: #EC5500;
+    color: #FFDAAF;
+    transition: 2s;
+    text-shadow: 2.5px 2.5px 0px #000;
+    border: solid 3px #FFDAAF;
+}
+ 
+[id^=tab]:checked + label {
+    background: #EC5500;
+    color: #FFDAAF;
+    transition: 2s;
+    border: solid 3px #FFDAAF;
+    text-shadow: 2px 2px 0px #000;
+}
+ 
+[id^=tab]:checked ~ [id^=tab-content] {
+    display: inline-block;
+}
+ 
+.tab-content {
+    margin-top: 2.5%;
+    z-index: 2;
+    display: none;
+    text-align: center;
+    width: 100%;;
+    line-height: 140%;
+    padding-top: 10px;
+    background: #FFDAAF;
+    border: solid 3px #EC5500;
+    padding: 15px;
+    color: #EC5500;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    box-sizing: border-box;
+    -webkit-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    transition: 2s;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.tab-content:hover{
+  background: #EC5500;
+  color: #FFDAAF;
+  transition: 2s;
+  border: solid 3px #FFDAAF;
+}
+    
+      /**END OF TABS**/

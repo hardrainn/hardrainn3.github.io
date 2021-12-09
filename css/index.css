@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {background: #00F0FF;}
+::-moz-selection {background: #00F0FF;}
+::-webkit-selection {background: #00F0FF;}
+
+body{
+  background-image: url(index.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  min-height: 100%;
+}
+
+.main{
+width: 660px;
+height: 410px;
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+margin-top: 13%;
+z-index: -1000;
+}
+
+small{
+  font-family: Ubuntu-L;
+  font-size: 13.33px;
+  font-style: normal;
+  color: white;
+  opacity: 65%;
+  letter-spacing: 0.25em;
+}
+
+h1{
+  font-family: Ubuntu-B;
+  font-size: 99.07px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #FFFFFF 51.04%, rgba(255, 255, 255, 0.8) 100%);
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+/*Quote*/
+.blockquote {
+  border: 5px solid #337AB7;
+  font-style: monospace;
+  margin: 16px 32px 32px 16px;
+  padding: 8px 16px;
+  position: relative;
+  box-shadow: 8px 8px 0 0 #337AB7;
+  transition: 1.5s;
+}
+
+.blockquote cite {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #FFFFFF 51.04%, rgba(255, 255, 255, 0.8) 100%);
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 19.20px;
+  padding-top: 5px;
+  display: block;
+  text-align: right;
+  font-family: Ubuntu-M;
+}
+
+.blockquote:hover{
+  transition: 1.5s;
+  background: #337AB7;
+  border: 5px solid #BDD5EB
+}
+        p{
+          font-family: Ubuntu-Bl;
+          font-size: 33.18px;
+          background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #FFFFFF 51.04%, rgba(255, 255, 255, 0.8) 100%);
+          display: inline-block;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+/*End of Quote*/
+
+.buttonn{
+  font-family: Ubuntu-B;
+  font-size: 23.04px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #FFFFFF 51.04%, rgba(255, 255, 255, 0.8) 100%);
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 16px 32px;
+}
+
+.button{
+  background: rgba(255, 255, 255, 0.06);
+  display: inline-block;
+  border: 3px solid #337AB7;
+  border-radius: 12px;
+  padding: 16px, 32px, 16px, 32px;
+  transition: 2s;
+}
+
+.button:hover{
+  transition: 2s;
+  background: rgba(51, 122, 183, 0.95);
+  border: 3px solid #BDD5EB;
+}
+/*SOCIALS*/
+.socials a{
+  margin: 0px 12px;
+}
+
+.socials a img{
+opacity: 50%;
+transition: 1s;
+}
+
+.socials a img:hover{
+opacity: 100%;
+transition: 1s;
+}
+
+.socials{
+  margin-top: 13%;
+  bottom: 0px;
+}
+/* END OF SOCIALS*/

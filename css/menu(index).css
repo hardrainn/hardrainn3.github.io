@@ -1,0 +1,122 @@
+.cf:before, .cf:after {
+  content:" ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+.menu {
+  list-style:none;
+  margin: 8px auto;
+  width: 500px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  z-index: 1000;
+}
+.menu > li {
+  background: #337AB7;
+  float: left;
+  position: relative;
+  -webkit-transform: skewX(12deg);
+  border: 3px solid #BDD5EB;
+  transition: 1s;
+}
+.menu a {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Ubuntu-Bl, Helvetica;
+  letter-spacing: 0.15em;
+  font-size: 15.5px;
+  transition: 1s;
+}
+.menu li:hover {
+  background: #BDD5EB;
+  transition: 1s;
+  border: 3px solid #337AB7;
+}
+.menu a:hover{
+  color: #297AB7;
+  text-shadow: 2.5px 2.5px 0px #fff;
+}
+.menu > li > a {
+  -webkit-transform: skewX(-12deg);
+  padding: 1em 2em;
+}
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 230px;
+  left: 40%;
+  margin-left: -100px;
+  -webkit-transform: skewX(-12deg);
+  -webkit-transform-origin: left top;
+  z-index: 1000;
+
+}
+.submenu li {
+  background-color: #337AB7;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #BDD5EB;
+}
+.submenu > li > a {
+  padding: 1em 2em;
+}
+.submenu > li::after {
+  content:'';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);
+}
+/* Odd stuff */
+.submenu > li:nth-child(odd) {
+  -webkit-transform: skewX(-12deg) translateX(0);
+}
+.submenu > li:nth-child(odd) > a {
+  -webkit-transform: skewX(12deg);
+}
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  -webkit-transform: skewX(-12deg) rotate(3deg);
+}
+/* Even stuff */
+.submenu > li:nth-child(even) {
+  -webkit-transform: skewX(12deg) translateX(0);
+}
+.submenu > li:nth-child(even) > a {
+  -webkit-transform: skewX(-12deg);
+}
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  -webkit-transform: skewX(12deg) rotate(3deg);
+}
+/* Show dropdown */
+.submenu, .submenu li {
+  opacity: 0;
+  visibility: hidden;
+}
+.submenu li {
+  transition: 0.2s ease -webkit-transform;
+
+}
+.menu > li:hover .submenu, .menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+  transition: 1s;
+}
+.menu > li:hover .submenu li:nth-child(even) {
+  -webkit-transform: skewX(12deg) translateX(15px);
+  transition: 1s;
+}
+.menu > li:hover .submenu li:nth-child(odd) {
+  -webkit-transform: skewX(-12deg) translateX(-15px);
+  transition: 1s;
+}

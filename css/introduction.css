@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {background: #00F0FF;}
+::-moz-selection {background: #00F0FF;}
+::-webkit-selection {background: #00F0FF;}
+
+body{
+  background-image: url(introduction.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  min-height: 100%;
+}
+
+h1{
+  font-family: Ubuntu-B;
+  font-size: 57.33px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: #fff;
+  transition: 2.5s;
+  text-shadow: 3px 3px 0px #007373;
+}
+
+h1:hover{
+  transition: 2.5s;
+  -webkit-transform: scale(1.05);  
+  -webkit-transform: translate(-250px, 0px);
+  text-shadow: 6px 6px 0px #007373;
+}
+
+h4{
+  font-family: Ubuntu-B;
+  font-size: 19.20px;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  text-indent: 25px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+p{
+  font-family: Ubuntu-L;
+  font-size: 16.00px;
+  color: white;
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  text-indent: 5px;
+}
+
+
+.intro{
+  border: 3.5px solid #fff;
+  border-radius: 20px;
+  transition: 1.5s;
+  padding: 0px 16px 8px 16px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+
+.intro:hover{
+  border: 4px solid #fff;
+  background: #007373;
+  transition: 1.5s;
+  -webkit-transform: scale(1.05);
+}
+
+.att{
+  border: 3.5px solid #fff;
+  border-radius: 20px;
+  transition: 1.5s;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 8px;  margin-bottom: 8px;
+  margin-bottom: 8px;  margin-bottom: 8px;
+
+}
+
+.att:hover{
+  border: 4px solid #fff;
+  background: #007373;
+  transition: 1.5s;
+  -webkit-transform: scale(1.05);
+}
+
+.tech{
+  border: 3.5px solid #fff;
+  border-radius: 20px;
+  transition: 1.5s;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 8px;  margin-bottom: 8px;
+
+}
+
+.tech:hover{
+  border: 4px solid #fff;
+  background: #007373;
+  transition: 1.5s;
+  -webkit-transform: scale(1.05);
+}
+
+.econ{
+  border: 3.5px dashed #fff;
+  border-radius: 20px;
+  transition: 1.5s;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 8px;  margin-bottom: 8px;
+
+}
+
+.econ:hover{
+  border: 4px dashed #fff;
+  background: #007373;
+  transition: 1.5s;
+  -webkit-transform: scale(1.05);
+}
+
+.soc{
+  border: 3.5px dashed #fff;
+  border-radius: 20px;
+  transition: 1.5s;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 8px;  margin-bottom: 8px;
+
+}
+
+.soc:hover{
+  border: 4px dashed #fff;
+  background: #007373;
+  transition: 1.5s;
+  -webkit-transform: scale(1.05);
+}
+
+.col{
+  border: 3.5px dashed #fff;
+  border-radius: 20px;
+  transition: 1.5s;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 8px;  margin-bottom: 8px;
+
+}
+
+.col:hover{
+  border: 4px dashed #fff;
+  background: #007373;
+  transition: 1.5s;
+  -webkit-transform: scale(1.05);
+}
+
+.pol{
+  border: 3.5px dashed #fff;
+  border-radius: 20px;
+  transition: 1.5s;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 8px;  margin-bottom: 8px;
+
+}
+
+.pol:hover{
+  border: 4px dashed #fff;
+  background: #007373;
+  transition: 1.5s;
+  -webkit-transform: scale(1.05);
+}
+
+.env{
+  border: 3.5px dashed #fff;
+  border-radius: 20px;
+  transition: 1.5s;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 8px;  margin-bottom: 8px;
+
+}
+
+.env:hover{
+  border: 4px dashed #fff;
+  background: #007373;
+  transition: 1.5s;
+  -webkit-transform: scale(1.05);
+}
+
+.ser{
+  border: 3.5px solid #fff;
+  border-radius: 20px;
+  transition: 1.5s;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 8px;  margin-bottom: 8px;
+
+}
+
+.ser:hover{
+  border: 4px solid #fff;
+  background: #007373;
+  transition: 1.5s;
+  -webkit-transform: scale(1.05);
+}
+
